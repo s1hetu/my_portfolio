@@ -124,4 +124,20 @@ $(document).ready(function(){
         });
 
 });	
-	
+
+
+function show_all_projects(){
+	let show_all = document.getElementById('hidden-projects')
+	show_all.style.display = "block";
+	show_all.classList.add("isotope")
+	document.getElementById("show_all").style.display = "none";
+	document.getElementById("hide_all").style.display = "block";
+}
+
+function hide_all_projects() {
+	let hide_all = document.getElementsByClassName("hide-projects")[0]
+	hide_all.style.display = "none";
+	hide_all.classList.remove("isotope")
+	document.getElementById("show_all").style.display = "block";
+	document.getElementById("hide_all").style.display = "none";
+}

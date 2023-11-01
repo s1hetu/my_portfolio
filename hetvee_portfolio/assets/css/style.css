@@ -54,7 +54,7 @@ a,a:hover,a:active,a:focus {
 	font-size:16px;
 	padding:0;
 }
-h1,h2,h3,h4,h5,h6 { 
+h2,h3,h4,h5,h6 {
 	margin: 0;
 	color:#43485c;
     font-size: 16px;
@@ -188,12 +188,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .welcome-hero{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/p1.png)no-repeat;  
     background-size:cover;
     background-position: center;
-    height:890px;
+    margin-top: 100px;
+    height:820px;
 }
 .welcome-hero:before{
     position:absolute;
@@ -207,22 +208,27 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /*.header-text-area*/
 .header-text h2 {
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
+    text-align: end;
+    text-align: center;
+    color: #f8e7e7;
+    font-size: 50px;
+    font-weight: 600;
     text-transform: uppercase;
     line-height: 1.5;
+    margin-top: 380px;
 }
 .header-text h2 span {color: #d92cf9;}
 .header-text p {
+    
     color: #fff;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
-}
+}   
 .header-text a {
+    margin-top: 60px;
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -373,6 +379,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     
 }
 .skill-content{padding: 50px 0 80px;}
+
+. skill-content div.container {
+    width: 1500px;
+}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
     font-size: 24px;
@@ -391,11 +401,24 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     top: 6px;
     left: 20px;
 }
-.barWrapper {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
+.barWrapper,  .barWrapper h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: flex;
+	color:#43485c;
+	font-family: 'Poppins', sans-serif;
 }
+
+.barWrapper a{
+    margin-left: 20px;
+    font-size: 10px;
+    text-transform: capitalize;
+    display: flex;
+}
+
 .progress {
     border-radius:3px;
     overflow: visible;
@@ -565,10 +588,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     content: " ";
     width:100%;
     height: 100%;
-    background: #d92cf9;
-    background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
-    background: -webkit-linear-gradient(left, #d92cf9 0%,#b636ff 100%);
-    background: linear-gradient(to right, #d92cf9 0%,#b636ff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92cf9', endColorstr='#b636ff',GradientType=1 );
     -webkit-transform:scale(0);
     -moz-transform:scale(0);
@@ -592,14 +611,31 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .single-profile:hover .profile-icon-name,.single-profile:hover .profile-txt a>i{color: #fff;}
 .single-profile:hover .profile-border {border:transparent;}
 /*-------------------------------------
-        9. Portfolio
+
+
+
+        9. Profile
 --------------------------------------*/
-.portfolio {
+.profile {
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
 }
 
-.portfolio-content {padding-top: 100px;}
+.profile-content {padding-top: 100px;}
+
+
+.item p{
+    display: flex;
+    text-align: right;
+    color: red;
+}
+
+.isotope h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
 
 /* ---- .item ---- */
 .isotope:after {
@@ -612,6 +648,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     overflow:hidden;
     margin-bottom: 30px;
 }
+
+
 /*.item img*/
 .isotope .item img{
     width:100%;
@@ -622,13 +660,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.isotope .item:hover  img{
-    -webkit-transform:scale(1.5);
-    -moz-transform:scale(1.5);
-    -ms-transform:scale(1.5);
-    -o-transform:scale(1.5);
-    transform:scale(1.5);
-}/*.item img*/
 
 /*.isotope-overlay*/
 .isotope-overlay{
@@ -667,6 +698,19 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     top:0;
 }/*.isotope-overlay*/
 
+.profile-details .container button{
+    margin-top: 20px;
+    position: relative;
+    left: 47%;
+    background-color: #b636ff;
+    color: white;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #b636ff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    margin-bottom: 20px;
+}
+
 /*-------------------------------------
         10. Clients
 --------------------------------------*/
@@ -675,10 +719,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     display: flex;
     align-items: center;
     height: 250px;
+
 }
 .clients-area .item {padding: 0 25px;}
 
 .clients .clients-area .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius:0;
+}
+
+.owl-carousel1{
     display: block;
     width: 100%;
     height: auto;
