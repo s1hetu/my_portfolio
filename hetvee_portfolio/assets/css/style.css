@@ -254,6 +254,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
+    margin-top: 20px;
     font-size:18px;
     color: #3c4258;
     text-transform: initial;
@@ -762,7 +763,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /*--contct button--*/
-.contact-form .single-contact-btn {
+.contact-form .contact-btn {
     display:flex;
     align-items:center;
     justify-content:center;
@@ -771,7 +772,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     margin-top: 3px;
     background: #b636ff;
     border: 1px solid #b636ff;
-    cursor:pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
      -webkit-transition: .5s; 
     -moz-transition:.5s; 
@@ -779,11 +779,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transition:.5s;
     transition: .5s;
 }
-.contact-form .single-contact-btn .contact-btn ,
-.contact-form .single-contact-btn .contact-btn:focus {
+.contact-form .contact-btn ,
+.contact-form .contact-btn:focus {
     margin-top:0px;
     outline: 0 !important;
     border:0;
+    width: 100%;
     color: #fff;
     border-radius: 0px;
     font-size:14px;
@@ -794,7 +795,21 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .5s;
     
 }
-.single-contact-btn:hover{
+
+.error-msg {
+    background-color: #FFFFFF;
+    border: 2px solid  #b636ff;
+    color: #b636ff;
+    padding: 5px;
+    width: 50%;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 25% 10px;
+    border-radius: 5px;
+}
+
+.contact-btn:hover{
     background: #9f00ff;
     border: 1px solid #9f00ff;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);

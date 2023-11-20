@@ -127,23 +127,23 @@
                 <div class="col-sm-6">
                     <div class="single-about-txt">
                         <h3>
-                            I am a Python Developer having 2+ years of expeience in designing, developing, testing and
-                            maintaining Web Applications using differnent frameworks.
+                            I am a Python Developer having 2+ years of experience in designing, developing, testing and
+                            maintaining Web Applications using different frameworks.
                         </h3>
                         <p>
-                            I have completed my graduation in the filed of Information Technology from Gujarat. I have
+                            I have completed my graduation in the field of Information Technology from Gujarat. I have
                             proficient experience working with various back-end frameworks like Django, Flask, FastAPI
                             and RESTful architecture. I am also familiar with font-end technologies like HTML, CSS,
-                            JavaScript. I have worked with both SQL and NoSQL Databases.
-                            I have vast knoweledge of using third-party libraries for Managing Background Tasks, Payment
-                            Integration, Message Queuing, WebSocket, Web Scrapping, Testing, AWS Services, Dokcer
+                            JavaScript, Bootstrap. I have worked with both SQL and NoSQL Databases.
+                            I have vast knowledge of using third-party tools and libraries for Managing Background Tasks, Payment
+                            Integration, Message Queuing, WebSocket, Web Scrapping, Testing. I have worked with cloud service like AWS and Container Service like Dokcer
                         </p>
 
                     </div>
                 </div>
                 <div class="col-sm-offset-1 col-sm-5">
                     <div class="single-about-img">
-                        <img alt="profile_image" src="assets/images/about/profile_image.jpg">
+                        <img alt="profile_image" src="assets/images/about/pr.png">
                     </div>
 
                 </div>
@@ -698,6 +698,12 @@
                     <div class="single-contact-box">
                         <div class="contact-form">
                             <form>
+                                 <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="error-msg" id="error-msg" style="display: none">No errors</p>
+                                    </div>
+                                 </div>
+
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
@@ -725,18 +731,19 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <textarea class="form-control" id="comment" placeholder="Message"
-                                                      rows="8"></textarea>
+                                                      rows="6"></textarea>
                                         </div><!--/.form-group-->
                                     </div><!--/.col-->
                                 </div><!--/.row-->
-                                <div class="row">
+
+                            </form><!--/form-->
+
+                            <div class="row">
                                     <div class="col-sm-12">
-                                        <div class="single-contact-btn">
-                                            <a class="contact-btn" href="#" role="button">submit</a>
-                                        </div><!--/.single-single-contact-btn-->
+                                            <button class="contact-btn" onclick="check_fields()">submit</button>
                                     </div><!--/.col-->
                                 </div><!--/.row-->
-                            </form><!--/form-->
+
                         </div><!--/.contact-form-->
                     </div><!--/.single-contact-box-->
                 </div><!--/.col-->
@@ -795,7 +802,7 @@
 
     <div id="scroll-Top">
         <div class="return-to-top">
-            <i class="fa fa-angle-up " id="scroll-top"></i>
+            <i class="fa fa-angle-up " id="scroll-top1"></i>
         </div>
 
     </div><!--/.scroll-Top-->

@@ -141,3 +141,36 @@ function hide_all_projects() {
 	document.getElementById("show_all").style.display = "block";
 	document.getElementById("hide_all").style.display = "none";
 }
+
+function check_fields() {
+	let name = document.getElementById("name").value;
+	let email = document.getElementById("email").value;
+	let message = document.getElementById("comment").value;
+
+	let error_msg = document.getElementById("error-msg")
+	let submit_button = document.getElementsByClassName("contact-btn")[0]
+
+	if(name === "" || name === null) {
+		error_msg.style.display = "block";
+		error_msg.innerText = "Name is Required."
+	}
+
+	else if(email === "" || email === null) {
+		error_msg.style.display = "block";
+		error_msg.innerText = "Email is Required."
+	}
+
+	else if(message === "" || message === null) {
+		error_msg.style.display = "block";
+		error_msg.innerText = "Message is Required."
+	}
+
+	else if ((name !== "" || name !== null) && (email !== "" || email !== null) && (message !== "" || message !== null)) {
+		error_msg.innerText = "Successfully submitted."
+		error_msg.style.display = "block";
+	}
+
+	else {
+		error_msg.style.display = "none";
+	}
+}
